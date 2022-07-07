@@ -1,5 +1,6 @@
 import Input from '../../components/Input';
-import { MovieCartCard } from '../../components/MovieCartCard';
+import { MovieCartCard } from '../../components/MovieCartCart';
+import { PrimaryButton } from '../../components/PrimaryButton';
 import {
   CartContainer, Container, Content, Form
 } from './styles';
@@ -28,20 +29,20 @@ export function Cart() {
           </div>
         </Form>
         <CartContainer>
-          <div>
+          <div className="table-container">
             <table>
-              <th>
-                <td>Imagem</td>
-                <td>Nome</td>
-                <td>Qtd</td>
-                <td>Preço</td>
-              </th>
-              <tbody>
-                <MovieCartCard />
-              </tbody>
+              <tr>
+                <th style={{ textAlign: 'left' }}>Imagem</th>
+                <th style={{ textAlign: 'left' }}>Nome</th>
+                <th style={{ textAlign: 'center' }}>Qtd</th>
+                <th style={{ textAlign: 'center' }}>Preço</th>
+                <th />
+              </tr>
+              <MovieCartCard />
+              <MovieCartCard />
             </table>
           </div>
-          <div>
+          <div className="total-container">
             <div>
               <h2>Total</h2>
             </div>
@@ -49,6 +50,7 @@ export function Cart() {
               <h1>Preço</h1>
             </div>
           </div>
+          <PrimaryButton label="Finalizar" onClick={() => console.log('Finalizar')} />
         </CartContainer>
       </Content>
     </Container>

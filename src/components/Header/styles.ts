@@ -18,6 +18,11 @@ export const Container = styled.header`
 			padding: 0 1rem;
 		}
 
+		@media (min-width: 1220px) {
+		padding: 0 8rem;
+
+	}
+
 `;
 
 export const SearchBox = styled.div`

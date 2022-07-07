@@ -10,4 +10,8 @@ export const Container = styled.div`
 		grid-template-columns: repeat(2,1fr);
 		gap: 1.5rem;
 	}
+	@media (min-width: 1220px) {
+		grid-template-columns: repeat(5,1fr);
+
+	}
 `;

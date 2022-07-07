@@ -28,6 +28,7 @@ module.exports = {
     'no-tabs': 'off',
     'comma-dangle': 'off',
     'react/button-has-type': 'off',
-    'react/require-default-props': 'off'
+    'react/require-default-props': 'off',
+    'jsx-a11y/control-has-associated-label': 'off'
   },
 };
