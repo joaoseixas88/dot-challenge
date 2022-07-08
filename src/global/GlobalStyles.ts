@@ -8,15 +8,22 @@ export const GlobalStyles = createGlobalStyle`
 		box-sizing: border-box;
 	}
 
+	html, body {
+  height:100%;
+}
+
 	button{
 		border: none;
 		cursor: pointer;
 	}
 
+	
+
 	.routes{
 		display: flex;
 		justify-content: center;
 		padding: 2.5rem 0;
+		height: 10%;
 	}
 	
 `;

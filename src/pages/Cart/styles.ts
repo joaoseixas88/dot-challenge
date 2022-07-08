@@ -42,11 +42,7 @@ export const Content = styled.div`
 		flex-direction: column;
 	}
 
-/* .table-container{
-	height: 18.5rem;
-	overflow: scroll;	
-} */
-	
+
 `;
 
 export const Form = styled.div`

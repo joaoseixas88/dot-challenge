@@ -56,4 +56,15 @@ export const SearchBox = styled.div`
 export const Icons = styled.div`
 	display: flex;
 	gap: 1.5rem;
+
+	.total-notification{
+		position: relative;
+		top: -10px;
+		right: 12px;
+		display: flex;
+		align-items: center;
+		border-radius: 100px;
+		padding: 0px 8px;
+		background: ${({ theme }) => theme.colors.primaryYellow};
+	}
 `;

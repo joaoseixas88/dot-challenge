@@ -1,16 +1,20 @@
 import { FaTrash } from 'react-icons/fa';
 import { useTheme } from 'styled-components';
+import './styles.css';
 
-export function MovieCartCard() {
+interface Props {
+  minify?: boolean;
+}
+export function MovieCartCard({ minify = false }: Props) {
   const { colors } = useTheme();
   return (
-    <tr>
+    <tr className={minify ? 'minify' : ''}>
       <td style={{ textAlign: 'left' }}>
         <img
           src="https://picsum.photos/200/300"
           alt="title"
-          width={68}
-          height={60}
+          width={minify ? 32 : 68}
+          height={minify ? 32 : 68}
         />
       </td>
       <td style={{ textAlign: 'left' }}>Nome do filme</td>
