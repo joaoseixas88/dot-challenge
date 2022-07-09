@@ -9,6 +9,13 @@ export const Container = styled.header`
 	background-color: ${({ theme }) => theme.colors.primaryGreen};
 	color: ${({ theme }) => theme.colors.shape};
 	font-weight: bold;
+	.logo{
+		img{
+
+			background-color: ${({ theme }) => theme.colors.primaryGray};
+			border-radius: 1rem;
+		}
+	}
 	div{
 		display: flex;
 		justify-content: center;
@@ -66,5 +73,7 @@ export const Icons = styled.div`
 		border-radius: 100px;
 		padding: 0px 8px;
 		background: ${({ theme }) => theme.colors.primaryYellow};
+		color: ${({ theme }) => theme.colors.primaryBlack};
+		font-size: 14px;
 	}
 `;

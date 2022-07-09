@@ -8,6 +8,7 @@ export const theme = {
     primaryGray: '#4b5c6b',
     shape: '#FFF',
     borderColor: '#c3cfd9',
-    textColor: '#293845'
+    textColor: '#293845',
+    primaryBlack: '#000'
   },
 };

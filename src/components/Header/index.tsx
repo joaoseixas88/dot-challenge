@@ -6,6 +6,7 @@ import { useTheme } from 'styled-components';
 import { Container, Icons, SearchBox } from './styles';
 import { CartModal } from '../CartModal';
 import { FavoriteModal } from '../FavoriteModal';
+import Logo from '../../assets/images/tmdb.svg';
 
 export function Header() {
   const [isOpenCartModal, setIsOpenCartModal] = useState(false);
@@ -24,8 +25,8 @@ export function Header() {
 
   return (
     <Container>
-      <div>
-        <h2>LOGO</h2>
+      <div className="logo">
+        <img src={Logo} alt="" width={35} height={35} />
       </div>
       <SearchBox>
         <div>
